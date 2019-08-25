@@ -1,0 +1,893 @@
+[debug] [2019-08-25T15:41:10.580Z] ----------------------------------------------------------------------
+[debug] [2019-08-25T15:41:10.582Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\guojin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-08-25T15:41:10.582Z] CLI Version:   7.1.1
+[debug] [2019-08-25T15:41:10.582Z] Platform:      win32
+[debug] [2019-08-25T15:41:10.582Z] Node Version:  v10.16.0
+[debug] [2019-08-25T15:41:10.583Z] Time:          Sun Aug 25 2019 08:41:10 GMT-0700 (Pacific Daylight Time)
+[debug] [2019-08-25T15:41:10.583Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-25T15:41:10.590Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-25T15:41:10.591Z] > authorizing via signed-in user
+[debug] [2019-08-25T15:41:10.591Z] [iam] checking project scrape-a3cb5 for permissions ["firebase.projects.get"]
+[debug] [2019-08-25T15:41:10.593Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-25T15:41:10.593Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-25T15:41:11.002Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-25T15:41:11.008Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/scrape-a3cb5:testIamPermissions  
+
+[debug] [2019-08-25T15:41:11.445Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-25T15:41:11.446Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/scrape-a3cb5  
+ 
+[debug] [2019-08-25T15:41:11.908Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\guojin\Desktop\scrape'...
+[info] 
+[debug] [2019-08-25T15:41:11.913Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/scrape-a3cb5/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[debug] [2019-08-25T15:41:11.924Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/scrape-a3cb5/adminSdkConfig  
+ 
+[debug] [2019-08-25T15:41:12.266Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-25T15:41:12.315Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist/scrape
+[info] +  hosting: Local server: http://localhost:5000
+[info] +  functions: Emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\guojin\Desktop\scrape\functions" for Cloud Functions...
+[debug] [2019-08-25T15:41:12.923Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:41:12.923Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:41:12.927Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:41:12.928Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:41:12.928Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:41:12.963Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:41:12.993Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[info] i  functions: HTTP trigger initialized at http://localhost:5001/scrape-a3cb5/us-central1/scraper
+[debug] [2019-08-25T15:41:20.099Z] Accepted request OPTIONS /scrape-a3cb5/us-central1/scraper --> scraper
+[debug] [2019-08-25T15:41:20.485Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:41:20.487Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:41:20.489Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:41:20.490Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:41:20.491Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:41:20.530Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:41:20.563Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:41:20.896Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:41:20.896Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:41:20.896Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:41:20.897Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:41:20.897Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:41:20.903Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\9028"}
+[debug] [2019-08-25T15:41:20.905Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\9028"}
+[debug] [2019-08-25T15:41:20.910Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-25T15:41:20.914Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T15:41:20.915Z] Accepted request POST /scrape-a3cb5/us-central1/scraper --> scraper
+[info] i  functions: Finished "scraper" in ~1s
+[debug] [2019-08-25T15:41:21.308Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:41:21.310Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:41:21.312Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:41:21.314Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:41:21.314Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:41:21.355Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:41:21.389Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:41:21.706Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:41:21.707Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:41:21.707Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:41:21.707Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:41:21.707Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:41:21.713Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\8400"}
+[debug] [2019-08-25T15:41:21.714Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\8400"}
+[debug] [2019-08-25T15:41:21.731Z] [runtime-status] Ephemeral server used! {}
+[info] >  https://stackoverflow.com/questions/38380462/syntaxerror-unexpected-token-o-in-json-at-position-1/38380728
+https://www.youtube.com/watch?v=dXjKh66BR2U
+https://e-hentai.org/
+https://e-hentai.org/g/1471391/5726b72b61/
+[debug] [2019-08-25T15:41:21.773Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "scraper" in ~1s
+[debug] [2019-08-25T15:41:59.761Z] File C:\Users\guojin\Desktop\scrape\functions\index.js changed, reloading triggers
+[debug] [2019-08-25T15:42:01.198Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:42:01.198Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:42:01.201Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:42:01.203Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:42:01.203Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:42:01.253Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:42:01.282Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:42:02.753Z] File C:\Users\guojin\Desktop\scrape\functions\index.js changed, reloading triggers
+[debug] [2019-08-25T15:42:04.150Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:42:04.150Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:42:04.153Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:42:04.155Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:42:04.155Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:42:04.195Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:42:04.231Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:42:10.866Z] Accepted request OPTIONS /scrape-a3cb5/us-central1/scraper --> scraper
+[debug] [2019-08-25T15:42:11.249Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:42:11.251Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:42:11.253Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:42:11.255Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:42:11.255Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:42:11.294Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:42:11.328Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:42:11.694Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:42:11.694Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:42:11.694Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:42:11.695Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:42:11.695Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:42:11.701Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\7032"}
+[debug] [2019-08-25T15:42:11.702Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\7032"}
+[debug] [2019-08-25T15:42:11.708Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-25T15:42:11.711Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T15:42:11.713Z] Accepted request POST /scrape-a3cb5/us-central1/scraper --> scraper
+[info] i  functions: Finished "scraper" in ~1s
+[debug] [2019-08-25T15:42:12.091Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:42:12.093Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:42:12.094Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:42:12.096Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:42:12.096Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:42:12.134Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:42:12.164Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:42:12.490Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:42:12.490Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:42:12.490Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:42:12.491Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:42:12.491Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:42:12.498Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\2712"}
+[debug] [2019-08-25T15:42:12.499Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\2712"}
+[debug] [2019-08-25T15:42:12.517Z] [runtime-status] Ephemeral server used! {}
+[info] >  https://stackoverflow.com/questions/38380462/syntaxerror-unexpected-token-o-in-json-at-position-1/38380728
+https://www.youtube.com/watch?v=dXjKh66BR2U
+https://e-hentai.org/
+https://e-hentai.org/g/1471391/5726b72b61/
+[debug] [2019-08-25T15:42:12.558Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/roller.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png' ]
+[info] >  (node:2712) UnhandledPromiseRejectionWarning: TypeError: Assignment to constant variable.
+[info] >      at cors (C:\Users\guojin\Desktop\scrape\functions\index.js:66:14)
+[info] >  (node:2712) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+[info] >  (node:2712) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2019-08-25T15:43:58.675Z] File C:\Users\guojin\Desktop\scrape\functions\index.js changed, reloading triggers
+[debug] [2019-08-25T15:44:00.071Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:44:00.072Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:44:00.075Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:44:00.076Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:44:00.077Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:44:00.115Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:44:00.146Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:44:02.896Z] File C:\Users\guojin\Desktop\scrape\functions\index.js changed, reloading triggers
+[debug] [2019-08-25T15:44:04.293Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:44:04.294Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:44:04.297Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:44:04.298Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:44:04.299Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:44:04.337Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:44:04.370Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:44:12.016Z] Accepted request POST /scrape-a3cb5/us-central1/scraper --> scraper
+[debug] [2019-08-25T15:44:12.411Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:44:12.412Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:44:12.415Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:44:12.416Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:44:12.417Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:44:12.459Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:44:12.492Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:44:12.864Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:44:12.864Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:44:12.864Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:44:12.865Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:44:12.865Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:44:12.871Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\5552"}
+[debug] [2019-08-25T15:44:12.873Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\5552"}
+[debug] [2019-08-25T15:44:12.891Z] [runtime-status] Ephemeral server used! {}
+[info] >  https://stackoverflow.com/questions/38380462/syntaxerror-unexpected-token-o-in-json-at-position-1/38380728
+https://www.youtube.com/watch?v=dXjKh66BR2U
+https://e-hentai.org/
+https://e-hentai.org/g/1471391/5726b72b61/
+[debug] [2019-08-25T15:44:12.894Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/roller.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png' ]
+[info] i  functions: Finished "scraper" in ~1s
+[debug] [2019-08-25T15:45:19.796Z] File C:\Users\guojin\Desktop\scrape\functions\index.js changed, reloading triggers
+[debug] [2019-08-25T15:45:21.240Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:45:21.241Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:45:21.245Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:45:21.246Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:45:21.247Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:45:21.285Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:45:21.316Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:45:37.706Z] Accepted request OPTIONS /scrape-a3cb5/us-central1/scraper --> scraper
+[debug] [2019-08-25T15:45:38.097Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:45:38.099Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:45:38.101Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:45:38.102Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:45:38.103Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:45:38.144Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:45:38.179Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:45:38.548Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:45:38.548Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:45:38.548Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:45:38.548Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:45:38.548Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:45:38.555Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\6176"}
+[debug] [2019-08-25T15:45:38.557Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\6176"}
+[debug] [2019-08-25T15:45:38.562Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-25T15:45:38.565Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T15:45:38.565Z] Accepted request POST /scrape-a3cb5/us-central1/scraper --> scraper
+[info] i  functions: Finished "scraper" in ~1s
+[debug] [2019-08-25T15:45:38.936Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:45:38.938Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:45:38.939Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:45:38.941Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:45:38.941Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:45:38.980Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:45:39.015Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:45:39.372Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:45:39.372Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:45:39.372Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:45:39.373Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:45:39.373Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:45:39.380Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\5960"}
+[debug] [2019-08-25T15:45:39.381Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\5960"}
+[debug] [2019-08-25T15:45:39.400Z] [runtime-status] Ephemeral server used! {}
+[info] >  https://stackoverflow.com/questions/38380462/syntaxerror-unexpected-token-o-in-json-at-position-1/38380728
+https://www.youtube.com/watch?v=dXjKh66BR2U
+https://e-hentai.org/
+https://e-hentai.org/g/1471391/5726b72b61/
+[debug] [2019-08-25T15:45:39.403Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'https://ehgt.org/g/f.png',
+[info] >    'https://ehgt.org/g/p.png',
+[info] >    'https://ehgt.org/g/n.png',
+[info] >    'https://ehgt.org/g/l.png',
+[info] >    'http://100.37.241.9:65533/h/9b1dc609599caf9ec191128a8c5bbcb84b5a5001-416637-1280-1818-jpg/keystamp=1566748500-e19f3ef478;fileindex=72400414;xres=1280/001.jpg',
+[info] >    'https://ehgt.org/g/f.png',
+[info] >    'https://ehgt.org/g/p.png',
+[info] >    'https://ehgt.org/g/n.png',
+[info] >    'https://ehgt.org/g/l.png',
+[info] >    'https://ehgt.org/g/b.png',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif' ]
+[info] i  functions: Finished "scraper" in ~3s
+[debug] [2019-08-25T15:46:37.731Z] File C:\Users\guojin\Desktop\scrape\functions\index.js changed, reloading triggers
+[debug] [2019-08-25T15:46:39.219Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:46:39.219Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:46:39.222Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:46:39.224Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:46:39.224Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:46:39.263Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:46:39.300Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:46:40.889Z] Accepted request OPTIONS /scrape-a3cb5/us-central1/scraper --> scraper
+[debug] [2019-08-25T15:46:41.248Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:46:41.250Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:46:41.252Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:46:41.253Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:46:41.254Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:46:41.295Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:46:41.326Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:46:41.658Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:46:41.658Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:46:41.658Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:46:41.659Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:46:41.659Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:46:41.665Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\6108"}
+[debug] [2019-08-25T15:46:41.666Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\6108"}
+[debug] [2019-08-25T15:46:41.671Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-25T15:46:41.674Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T15:46:41.674Z] Accepted request POST /scrape-a3cb5/us-central1/scraper --> scraper
+[info] i  functions: Finished "scraper" in ~1s
+[debug] [2019-08-25T15:46:42.046Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:46:42.048Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:46:42.050Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:46:42.052Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:46:42.052Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:46:42.091Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:46:42.122Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:46:42.453Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:46:42.453Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:46:42.453Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:46:42.454Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:46:42.454Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:46:42.461Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\6348"}
+[debug] [2019-08-25T15:46:42.462Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\6348"}
+[debug] [2019-08-25T15:46:42.482Z] [runtime-status] Ephemeral server used! {}
+[info] >  https://stackoverflow.com/questions/38380462/syntaxerror-unexpected-token-o-in-json-at-position-1/38380728
+https://www.youtube.com/watch?v=dXjKh66BR2U
+https://e-hentai.org/
+https://e-hentai.org/g/1471391/5726b72b61/
+[debug] [2019-08-25T15:46:42.486Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'https://yt3.ggpht.com/a/AGF-l79FkXYtRM1Xh0v7-zvYTimNTfOsGtS8hSE7eg=s48-c-k-c0xffffffff-no-rj-mo',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/IB6GhIa60Q8lVnigY67oI9tJfXMVcQdXa8J2Xfo6pklYJH6EnVt9-ae9-NA-waCGZZ7b6UgcbWtwuFugITGx8cTRzE6cF1-BAc78SdLXO27YWUsdz4BeHuvgRXo=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/fFV7826TGBEtydgJB_eW41UPH8olluxiDXw5ZoecpDYJdAKSU2E5UggVP_NYSJTwQ7X4Xs-lTrpo_NrJkvwRIRdprX0Msb0DGxPbdl1Dm_xbAPzx2XSWPwjUZFk=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/BvgFbRrasoDuMZrD8K5uPi8L64RVWFurMRBKc1dW0MeCFp80WA3h_tCbZy8sXyXgbjpZwyPW-HvIkAH_rCxyYF44l7x6kFtODHNsdA90s5-iTgc4yZXD0HVNkTw=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/PUrVJ-Yp2DNAIljQSrNH4W9E6lUo6N6st9IuYUCm6ywOLnJON2qNzSWeSYUi23arwdOiqp96DIDcwileSF0BAni1mFvVJ7l_GWppDzsR34Ep5LTQg7GSBBCE35Y=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/YfOn-Vwx2CKSnpZdzjK3lt7IZJrmdARw9wLoGY5-gWjqL05PuE2PpZf6V6pu9RoEZ-VthDAgIwFFmieY3lqG0OouR6pD5NXHP7azCIHMPUN1XueuhwNLRSLMuv4=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/Y47aKcqi7cN_NKhCIu5ZpNrGhU6bUFymk2q-fM0qLAOeuPpvhQ3B3q3d4wAlHRuLQfLDVaz4me1tx_NhtcytSzlA7q3H0xJMLV-dzDZXkULSBH0if7aiE26dPVA=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '' ]
+[info] i  functions: Finished "scraper" in ~3s
+[debug] [2019-08-25T15:48:30.193Z] File C:\Users\guojin\Desktop\scrape\functions\index.js changed, reloading triggers
+[debug] [2019-08-25T15:48:31.626Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:48:31.627Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:48:31.630Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:48:31.631Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:48:31.632Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:48:31.673Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:48:31.706Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:48:37.861Z] Accepted request OPTIONS /scrape-a3cb5/us-central1/scraper --> scraper
+[debug] [2019-08-25T15:48:38.251Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:48:38.252Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:48:38.254Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:48:38.255Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:48:38.256Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:48:38.294Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:48:38.324Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:48:38.643Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:48:38.643Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:48:38.643Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:48:38.644Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:48:38.644Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:48:38.651Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\5596"}
+[debug] [2019-08-25T15:48:38.652Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\5596"}
+[debug] [2019-08-25T15:48:38.657Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-25T15:48:38.661Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T15:48:38.662Z] Accepted request POST /scrape-a3cb5/us-central1/scraper --> scraper
+[info] i  functions: Finished "scraper" in ~1s
+[debug] [2019-08-25T15:48:39.047Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:48:39.049Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:48:39.052Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:48:39.053Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:48:39.054Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:48:39.093Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:48:39.126Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:48:39.478Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:48:39.479Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:48:39.479Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:48:39.479Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:48:39.479Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:48:39.486Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\9228"}
+[debug] [2019-08-25T15:48:39.487Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\9228"}
+[debug] [2019-08-25T15:48:39.506Z] [runtime-status] Ephemeral server used! {}
+[info] >  https://stackoverflow.com/questions/38380462/syntaxerror-unexpected-token-o-in-json-at-position-1/38380728
+https://www.youtube.com/watch?v=dXjKh66BR2U
+https://e-hentai.org/
+https://e-hentai.org/g/1471391/5726b72b61/
+[debug] [2019-08-25T15:48:39.510Z] [runtime-status] Ephemeral server survived. {}
+[info] >  [ 'https://yt3.ggpht.com/a/AGF-l79FkXYtRM1Xh0v7-zvYTimNTfOsGtS8hSE7eg=s48-c-k-c0xffffffff-no-rj-mo',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/IB6GhIa60Q8lVnigY67oI9tJfXMVcQdXa8J2Xfo6pklYJH6EnVt9-ae9-NA-waCGZZ7b6UgcbWtwuFugITGx8cTRzE6cF1-BAc78SdLXO27YWUsdz4BeHuvgRXo=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/fFV7826TGBEtydgJB_eW41UPH8olluxiDXw5ZoecpDYJdAKSU2E5UggVP_NYSJTwQ7X4Xs-lTrpo_NrJkvwRIRdprX0Msb0DGxPbdl1Dm_xbAPzx2XSWPwjUZFk=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/BvgFbRrasoDuMZrD8K5uPi8L64RVWFurMRBKc1dW0MeCFp80WA3h_tCbZy8sXyXgbjpZwyPW-HvIkAH_rCxyYF44l7x6kFtODHNsdA90s5-iTgc4yZXD0HVNkTw=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/PUrVJ-Yp2DNAIljQSrNH4W9E6lUo6N6st9IuYUCm6ywOLnJON2qNzSWeSYUi23arwdOiqp96DIDcwileSF0BAni1mFvVJ7l_GWppDzsR34Ep5LTQg7GSBBCE35Y=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/YfOn-Vwx2CKSnpZdzjK3lt7IZJrmdARw9wLoGY5-gWjqL05PuE2PpZf6V6pu9RoEZ-VthDAgIwFFmieY3lqG0OouR6pD5NXHP7azCIHMPUN1XueuhwNLRSLMuv4=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/Y47aKcqi7cN_NKhCIu5ZpNrGhU6bUFymk2q-fM0qLAOeuPpvhQ3B3q3d4wAlHRuLQfLDVaz4me1tx_NhtcytSzlA7q3H0xJMLV-dzDZXkULSBH0if7aiE26dPVA=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '' ]
+[info] i  functions: Finished "scraper" in ~3s
+[debug] [2019-08-25T15:49:33.268Z] File C:\Users\guojin\Desktop\scrape\functions\index.js changed, reloading triggers
+[debug] [2019-08-25T15:49:34.746Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:49:34.747Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:49:34.750Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:49:34.751Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:49:34.752Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:49:34.793Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:49:34.827Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:49:37.403Z] Accepted request OPTIONS /scrape-a3cb5/us-central1/scraper --> scraper
+[debug] [2019-08-25T15:49:37.791Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:49:37.793Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:49:37.796Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:49:37.797Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:49:37.798Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:49:37.837Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:49:37.867Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:49:38.189Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:49:38.189Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:49:38.189Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:49:38.189Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:49:38.189Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:49:38.197Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\10064"}
+[debug] [2019-08-25T15:49:38.198Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\10064"}
+[debug] [2019-08-25T15:49:38.202Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-25T15:49:38.205Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T15:49:38.206Z] Accepted request POST /scrape-a3cb5/us-central1/scraper --> scraper
+[info] i  functions: Finished "scraper" in ~1s
+[debug] [2019-08-25T15:49:38.596Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:49:38.598Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:49:38.600Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:49:38.601Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:49:38.602Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:49:38.642Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:49:38.674Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:49:39.022Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:49:39.022Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:49:39.022Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:49:39.023Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:49:39.023Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:49:39.029Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\10072"}
+[debug] [2019-08-25T15:49:39.030Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\10072"}
+[debug] [2019-08-25T15:49:39.048Z] [runtime-status] Ephemeral server used! {}
+[info] >  https://stackoverflow.com/questions/38380462/syntaxerror-unexpected-token-o-in-json-at-position-1/38380728
+https://www.youtube.com/watch?v=dXjKh66BR2U
+https://e-hentai.org/
+https://e-hentai.org/g/1471391/5726b72b61/
+[debug] [2019-08-25T15:49:39.051Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T15:49:41.923Z] File C:\Users\guojin\Desktop\scrape\functions\1.png changed, reloading triggers
+[info] >  [ 'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/roller.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png' ]
+[info] i  functions: Finished "scraper" in ~3s
+[debug] [2019-08-25T15:49:43.305Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:49:43.306Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:49:43.309Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:49:43.310Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:49:43.310Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:49:43.345Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:49:43.375Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:51:17.304Z] File C:\Users\guojin\Desktop\scrape\functions\index.js changed, reloading triggers
+[debug] [2019-08-25T15:51:18.732Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:51:18.733Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:51:18.736Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:51:18.737Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:51:18.738Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:51:18.775Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:51:18.805Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:51:23.593Z] Accepted request OPTIONS /scrape-a3cb5/us-central1/scraper --> scraper
+[debug] [2019-08-25T15:51:23.995Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:51:23.996Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:51:23.998Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:51:24.000Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:51:24.000Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:51:24.042Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:51:24.077Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:51:24.444Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:51:24.444Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:51:24.445Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:51:24.445Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:51:24.445Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:51:24.452Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\5628"}
+[debug] [2019-08-25T15:51:24.454Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\5628"}
+[debug] [2019-08-25T15:51:24.459Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-25T15:51:24.462Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T15:51:24.463Z] Accepted request POST /scrape-a3cb5/us-central1/scraper --> scraper
+[info] i  functions: Finished "scraper" in ~1s
+[debug] [2019-08-25T15:51:24.869Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:51:24.872Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:51:24.874Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:51:24.875Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:51:24.876Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:51:24.919Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:51:24.961Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:51:25.334Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:51:25.334Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:51:25.334Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:51:25.335Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:51:25.335Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:51:25.342Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\8288"}
+[debug] [2019-08-25T15:51:25.343Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\8288"}
+[debug] [2019-08-25T15:51:25.363Z] [runtime-status] Ephemeral server used! {}
+[info] >  https://stackoverflow.com/questions/38380462/syntaxerror-unexpected-token-o-in-json-at-position-1/38380728
+https://www.youtube.com/watch?v=dXjKh66BR2U
+https://e-hentai.org/
+https://e-hentai.org/g/1471391/5726b72b61/
+[debug] [2019-08-25T15:51:25.366Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T15:51:28.814Z] File C:\Users\guojin\Desktop\scrape\functions\1.png changed, reloading triggers
+[info] >  [ 'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/roller.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/blank.gif',
+[info] >    'https://ehgt.org/g/ygm.png',
+[info] >    'https://ehgt.org/g/ygm.png' ]
+[info] i  functions: Finished "scraper" in ~3s
+[debug] [2019-08-25T15:51:30.232Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:51:30.233Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:51:30.236Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:51:30.237Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:51:30.238Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:51:30.276Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:51:30.312Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:52:01.970Z] File C:\Users\guojin\Desktop\scrape\functions\index.js changed, reloading triggers
+[debug] [2019-08-25T15:52:03.433Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:52:03.433Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:52:03.436Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:52:03.438Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:52:03.438Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:52:03.476Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:52:03.509Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:52:05.978Z] Accepted request OPTIONS /scrape-a3cb5/us-central1/scraper --> scraper
+[debug] [2019-08-25T15:52:06.365Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:52:06.367Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:52:06.369Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:52:06.371Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:52:06.371Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:52:06.410Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:52:06.444Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:52:06.800Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:52:06.801Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:52:06.801Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:52:06.801Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:52:06.801Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:52:06.807Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\9296"}
+[debug] [2019-08-25T15:52:06.808Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\9296"}
+[debug] [2019-08-25T15:52:06.813Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-25T15:52:06.816Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T15:52:06.817Z] Accepted request POST /scrape-a3cb5/us-central1/scraper --> scraper
+[info] i  functions: Finished "scraper" in ~1s
+[debug] [2019-08-25T15:52:07.203Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T15:52:07.205Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:52:07.206Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:52:07.208Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:52:07.208Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:52:07.246Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:52:07.280Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T15:52:07.630Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T15:52:07.630Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T15:52:07.630Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T15:52:07.631Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T15:52:07.631Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T15:52:07.637Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\5740"}
+[debug] [2019-08-25T15:52:07.638Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\5740"}
+[debug] [2019-08-25T15:52:07.656Z] [runtime-status] Ephemeral server used! {}
+[info] >  https://stackoverflow.com/questions/38380462/syntaxerror-unexpected-token-o-in-json-at-position-1/38380728
+https://www.youtube.com/watch?v=dXjKh66BR2U
+https://e-hentai.org/
+https://e-hentai.org/g/1471391/5726b72b61/
+[debug] [2019-08-25T15:52:07.659Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T15:52:11.081Z] File C:\Users\guojin\Desktop\scrape\functions\1.png changed, reloading triggers
+[info] >  [ 'https://ehgt.org/g/f.png',
+[info] >    'https://ehgt.org/g/p.png',
+[info] >    'https://ehgt.org/g/n.png',
+[info] >    'https://ehgt.org/g/l.png',
+[info] >    'http://199.19.225.182:41088/h/a8727b964e6cd5191aac4dd699e034320d1c6fd7-428270-1280-1838-jpg/keystamp=1566748800-b4a6018007;fileindex=72382435;xres=1280/005.jpg',
+[info] >    'https://ehgt.org/g/f.png',
+[info] >    'https://ehgt.org/g/p.png',
+[info] >    'https://ehgt.org/g/n.png',
+[info] >    'https://ehgt.org/g/l.png',
+[info] >    'https://ehgt.org/g/b.png',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif',
+[info] >    'https://ehgt.org/g/mr.gif' ]
+[info] i  functions: Finished "scraper" in ~3s
+[debug] [2019-08-25T15:52:12.448Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T15:52:12.449Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T15:52:12.452Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:52:12.453Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:52:12.453Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T15:52:12.489Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T15:52:12.519Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T16:06:45.836Z] File C:\Users\guojin\Desktop\scrape\functions\index.js changed, reloading triggers
+[debug] [2019-08-25T16:06:47.266Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T16:06:47.267Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T16:06:47.270Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T16:06:47.271Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T16:06:47.272Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T16:06:47.311Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T16:06:47.345Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T16:07:05.941Z] File C:\Users\guojin\Desktop\scrape\functions\index.js changed, reloading triggers
+[debug] [2019-08-25T16:07:07.410Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T16:07:07.411Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T16:07:07.414Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T16:07:07.415Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T16:07:07.416Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T16:07:07.456Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T16:07:07.491Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T16:07:17.070Z] Accepted request OPTIONS /scrape-a3cb5/us-central1/scraper --> scraper
+[debug] [2019-08-25T16:07:17.433Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T16:07:17.434Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T16:07:17.437Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T16:07:17.438Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T16:07:17.438Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T16:07:17.478Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T16:07:17.510Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T16:07:17.849Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T16:07:17.849Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T16:07:17.849Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T16:07:17.850Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T16:07:17.850Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T16:07:17.856Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\9928"}
+[debug] [2019-08-25T16:07:17.858Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\9928"}
+[debug] [2019-08-25T16:07:17.863Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-25T16:07:17.866Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T16:07:17.867Z] Accepted request POST /scrape-a3cb5/us-central1/scraper --> scraper
+[info] i  functions: Finished "scraper" in ~1s
+[debug] [2019-08-25T16:07:18.277Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[info] i  functions: Beginning execution of "scraper"
+[debug] [2019-08-25T16:07:18.278Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T16:07:18.280Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T16:07:18.281Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T16:07:18.282Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T16:07:18.331Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T16:07:18.367Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2019-08-25T16:07:18.748Z] [runtime-status] Trigger "scraper" has been found, beginning invocation! {}
+[debug] [2019-08-25T16:07:18.748Z] [runtime-status]  {"httpsTrigger":{},"name":"scraper","entryPoint":"scraper"}
+[debug] [2019-08-25T16:07:18.748Z] [runtime-status] Running scraper in mode HTTPS {}
+[debug] [2019-08-25T16:07:18.749Z] [default-admin-app-used]  {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[debug] [2019-08-25T16:07:18.749Z] [runtime-status] Intializing default app. {"databaseURL":"https://scrape-a3cb5.firebaseio.com","storageBucket":"scrape-a3cb5.appspot.com","projectId":"scrape-a3cb5","credential":{}}
+[info] i  Your code does not appear to initialize the 'firebase-admin' module, so we've done it automatically.
+   - Learn more: https://firebase.google.com/docs/admin/setup
+[debug] [2019-08-25T16:07:18.754Z] {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\3896"}
+[debug] [2019-08-25T16:07:18.756Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Users\\guojin\\Desktop\\scrape\\functions\\3896"}
+[debug] [2019-08-25T16:07:18.776Z] [runtime-status] Ephemeral server used! {}
+[info] >  https://www.youtube.com/watch?v=dXjKh66BR2U
+[debug] [2019-08-25T16:07:18.779Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-25T16:07:23.143Z] File C:\Users\guojin\Desktop\scrape\functions\1.png changed, reloading triggers
+[info] >  [ 'https://yt3.ggpht.com/a/AGF-l79FkXYtRM1Xh0v7-zvYTimNTfOsGtS8hSE7eg=s48-c-k-c0xffffffff-no-rj-mo',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/IB6GhIa60Q8lVnigY67oI9tJfXMVcQdXa8J2Xfo6pklYJH6EnVt9-ae9-NA-waCGZZ7b6UgcbWtwuFugITGx8cTRzE6cF1-BAc78SdLXO27YWUsdz4BeHuvgRXo=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/fFV7826TGBEtydgJB_eW41UPH8olluxiDXw5ZoecpDYJdAKSU2E5UggVP_NYSJTwQ7X4Xs-lTrpo_NrJkvwRIRdprX0Msb0DGxPbdl1Dm_xbAPzx2XSWPwjUZFk=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/BvgFbRrasoDuMZrD8K5uPi8L64RVWFurMRBKc1dW0MeCFp80WA3h_tCbZy8sXyXgbjpZwyPW-HvIkAH_rCxyYF44l7x6kFtODHNsdA90s5-iTgc4yZXD0HVNkTw=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/PUrVJ-Yp2DNAIljQSrNH4W9E6lUo6N6st9IuYUCm6ywOLnJON2qNzSWeSYUi23arwdOiqp96DIDcwileSF0BAni1mFvVJ7l_GWppDzsR34Ep5LTQg7GSBBCE35Y=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/YfOn-Vwx2CKSnpZdzjK3lt7IZJrmdARw9wLoGY5-gWjqL05PuE2PpZf6V6pu9RoEZ-VthDAgIwFFmieY3lqG0OouR6pD5NXHP7azCIHMPUN1XueuhwNLRSLMuv4=-w512-h512-rj-pd-c0xffffffff',
+[info] >    '',
+[info] >    'https://yt3.ggpht.com/proxy/Y47aKcqi7cN_NKhCIu5ZpNrGhU6bUFymk2q-fM0qLAOeuPpvhQ3B3q3d4wAlHRuLQfLDVaz4me1tx_NhtcytSzlA7q3H0xJMLV-dzDZXkULSBH0if7aiE26dPVA=-w512-h512-rj-pd-c0xffffffff',
+[info] >    'https://i.ytimg.com/vi/FSs_JYwnAdI/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCes6wfDEC9K7oABakEnn42uFbTWg',
+[info] >    'https://i.ytimg.com/vi/Sh6lK57Cuk4/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAqPYtI9Eo_MDHbumYlwdk9XZbWeg',
+[info] >    'https://i.ytimg.com/vi/yy6TV9Dntlw/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLChcfUx4Q4rKsz0483FEWlooC2gWQ',
+[info] >    'https://i.ytimg.com/vi/vfILTM_xcOE/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCU4GRNSaVTp9QpRxm8PGmiHtrMJg',
+[info] >    'https://i.ytimg.com/vi/-1h8HQ6rd5U/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLC5itDfPrnJpTsjpJhxj7PFW2GMcg',
+[info] >    'https://i.ytimg.com/vi/8aGhZQkoFbQ/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLASWnNQ3Oq6Fa9QkCAJMm8YtSP-9w',
+[info] >    'https://i.ytimg.com/vi/broQmxQAMjM/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDdrlQ3KNWpJY_Kj-QVAl_UbC5YLg',
+[info] >    'https://i.ytimg.com/vi/jvymyRS0Vug/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBzY0KKcKYXDWcwC0YXSEXMh9jCkQ',
+[info] >    'https://i.ytimg.com/vi/iw7XM5EBbGs/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBpAnhwPm5QADlKEVuxSN41CYmo5A',
+[info] >    'https://i.ytimg.com/vi/35RlydUf6xo/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAu8LLgrQ33BNe9ED839ALTlnjbdw',
+[info] >    'https://i.ytimg.com/vi/fssFXlNk6vw/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBqni1PPrly5KwclLNOCxPhLsYtJA',
+[info] >    'https://i.ytimg.com/vi/mkrN4uAcDGk/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLA6qGF46PZ5GATU5vrvD5pUQWNC4Q',
+[info] >    'https://i.ytimg.com/vi/ciNHn38EyRc/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDCMMrBAKxgImG1c2UWyLmMvrdYqA',
+[info] >    'https://i.ytimg.com/vi/btFsjiugudk/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDgglu3rLbrmPM7gfcyWA_TYwpchg',
+[info] >    'https://i.ytimg.com/vi/62tsiY5j4_0/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBN9S-J7nWWhDbNamJAE7xK7-Y5hw',
+[info] >    'https://i.ytimg.com/vi/fcvgVfo2GAg/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLBvI9KBbflFMqMbiVJvMn0fB_-gpw',
+[info] >    'https://i.ytimg.com/vi/ChS3J893rpI/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDkkEXeqSYQURj9FjFiiyI9mPAKMg',
+[info] >    'https://i.ytimg.com/vi/XQgXKtPSzUI/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCkZVlvrlyC92ZZ2cxDMhlufsvSNw',
+[info] >    'https://i.ytimg.com/vi/vn3tm0quoqE/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAHYafsfGrn_mHI5av88Ux23CSStA',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '',
+[info] >    '' ]
+[info] i  functions: Finished "scraper" in ~4s
+[debug] [2019-08-25T16:07:24.562Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Users\\guojin\\Desktop\\scrape\\functions","node_version":"10.16.0"}
+[debug] [2019-08-25T16:07:24.563Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-25T16:07:24.566Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T16:07:24.567Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T16:07:24.568Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-25T16:07:24.607Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-25T16:07:24.639Z] [runtime-status] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.4.0","resolution":"C:\\Users\\guojin\\Desktop\\scrape\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
