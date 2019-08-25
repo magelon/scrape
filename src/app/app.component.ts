@@ -9,6 +9,7 @@ import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 })
 export class AppComponent {
   title = 'scrape';
+  tag2
 
   constructor(private http: HttpClient) {
     
@@ -17,10 +18,10 @@ export class AppComponent {
 
   scraper(tag){
   
-    let search={
-      tag:tag
-    }
-  
+let data={
+  text:tag
+}
+
     let header=new HttpHeaders({
       'Content-Type' : 'application/json',
       'Cache-Control': 'no-cache',
@@ -29,8 +30,8 @@ export class AppComponent {
     });
     
     let options={headers:header};
-    let Root_url2= 'http://localhost:5001'
-      this.http.post(Root_url2+'scraper',search,options).toPromise().then(data=>
+    let Root_url2= 'http://localhost:5001/scrape-a3cb5/us-central1/scraper' 
+      this.http.post(Root_url2,data,options).toPromise().then(data=>
         {
           console.log(data);
         }).catch(err=>{

@@ -12,7 +12,7 @@ const fetch=require('node-fetch');
 // });
 
 const scrapeMetatags=(text)=>{
-    const url=Array.from(getUrls(text));
+    const urls=Array.from(getUrls(text));
     const requests=urls.map(async url=>{
         const res=await fetch(url);
         const html=await res.text();
@@ -38,8 +38,9 @@ const scrapeMetatags=(text)=>{
 
 exports.scraper=functions.https.onRequest((request,response)=>{
     cors(request,response,async()=>{
-        const body=JSON.parse(request.body);
-        const data=await scrapeMetatags(body.text);
+        console.log(request.body.text)
+        // const body=JSON.parse(request.body);
+         const data=await scrapeMetatags(request.body.text);
         response.send(data)
     });
 });
